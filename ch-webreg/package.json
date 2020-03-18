@@ -1,0 +1,16 @@
+{
+  "name": "tailwind.css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buildcss": "npx tailwindcss build ./css/styles.css -o output.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^1.2.0",
+    "tailwindcss-responsive-embed": "^1.0.0"
+  }
+}
