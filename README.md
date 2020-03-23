@@ -9,3 +9,5 @@
 [/ch-replay](https://warren-ipro.github.io/commission-hero/ch-replay)
 
 [/ch-review](https://warren-ipro.github.io/commission-hero/ch-review)
+
+[/ch-review](https://warren-ipro.github.io/commission-hero/ch-join)
