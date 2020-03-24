@@ -31,28 +31,34 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Navbar -->
-  <nav class="bg-transparent p-5">
-    <div class="container px-20 mx-auto flex justify-between">
-      <div class="nav-left flex items-center">
+  <nav class="container mx-auto bg-transparent p-5 lg:px-20">
+    <div class="flex items-center justify-between flex-wrap">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
         <div class="logo p-2">
           <a href="http://zeroup.co/index.html">
             <img class="h-8" src="./assets/images/zeroup.png" alt="Zero Up™">
           </a>
         </div>
-        <div class="nav-items">
-          <a class="font-light uppercase p-4 text-sm text-blue-800 hover:text-gray-800" href="http://zeroup.co/">About</a>
-          <a class="font-light uppercase p-4 text-sm text-blue-800 hover:text-gray-800" href="http://zeroup.co/">Features</a>
-          <a class="font-light uppercase p-4 text-sm text-blue-800 hover:text-gray-800" href="http://zeroup.co/">Demo</a>
-          <a class="font-light uppercase p-4 text-sm text-blue-800 hover:text-gray-800" href="http://zeroup.co/">Integrations</a>
-          <a class="font-light uppercase p-4 text-sm text-blue-800 hover:text-gray-800" href="http://zeroup.co/">Testimonials</a>
-          <a class="font-light uppercase p-4 text-sm text-blue-800 hover:text-gray-800" href="http://zeroup.co/">Blog</a>
+      </div>
+      <div class="block lg:hidden">
+        <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-blue-700 border-blue-900 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      <div id="nav" class="hidden w-full flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a class="font-light uppercase p-2 lg:p-4 block mt-4 lg:inline-block lg:mt-0 text-blue-800 hover:text-gray-800" href="http://zeroup.co/about.html">About</a>
+          <a class="font-light uppercase p-2 lg:p-4 block mt-4 lg:inline-block lg:mt-0 text-blue-800 hover:text-gray-800" href="http://zeroup.co/features.html">Features</a>
+          <a class="font-light uppercase p-2 lg:p-4 block mt-4 lg:inline-block lg:mt-0 text-blue-800 hover:text-gray-800" href="http://zeroup.co/demo.html">Demo</a>
+          <a class="font-light uppercase p-2 lg:p-4 block mt-4 lg:inline-block lg:mt-0 text-blue-800 hover:text-gray-800" href="http://zeroup.co/integration.html">Integrations</a>
+          <a class="font-light uppercase p-2 lg:p-4 block mt-4 lg:inline-block lg:mt-0 text-blue-800 hover:text-gray-800" href="http://zeroup.co/index.html#testimonials">Testimonials</a>
+          <a class="font-light uppercase p-2 lg:p-4 block mt-4 lg:inline-block lg:mt-0 text-blue-800 hover:text-gray-800" href="http://zeroup.co/blog/">Blog</a>
+        </div>
+        <div class="flex flex-col lg:flex-row">
+          <a class="font-light uppercase p-2 lg:p-4 text-sm text-blue-800 hover:text-gray-800" href="https://new.zerouplab.com/user/sign_in">Login</a>
+          <a class="font-light uppercase py-3 px-5 text-sm text-blue-800 hover:text-white border border-blue-800 rounded hover:bg-blue-800" href="https://zerouplab.com/get-started/">Get Started</a>
         </div>
       </div>
-      <div class="right-nav flex items-center">
-        <a class="font-light uppercase p-4 text-sm text-blue-800 hover:text-gray-800" href="http://zeroup.co/">Login</a>
-        <a class="font-light uppercase py-3 px-5 text-sm text-blue-800 hover:text-white border border-blue-800 rounded hover:bg-blue-800" href="http://zeroup.co/">Get Started</a>
-      </div>
-
     </div>
   </nav>
 
@@ -60,15 +66,17 @@
   <div class="mx-auto p-4">
     <div class="container lg:px-12 mx-auto">
       <div class="headings text-center">
-        <h2 class="text-lg lg:text-2xl font-bold text-black mb-3 underline">Commission Hero Review</h2>
+        <h2 class="text-lg lg:text-xl font-bold text-gray-700 mb-3 uppercase tracking-wide">Commission Hero Review</h2>
         <h1 class="text-2xl lg:text-4xl font-bold text-blue-600 leading-tight mb-4 lg:mb-8 lg:mx-10">
           The #1 Clickbank Affiliate Finally Reveals His 3-Step System That He Used To Create A Thriving Affiliate Marketing Business <span class="text-gray-800">Is It Too Good To Be True?</span>
         </h1>
-        <p class="bg-blue-500 hover:bg-blue-700 text-white font-bold lg:text-lg lg:py-4 lg:px-8 mb-0 py-2 px-4 text-center rounded inline-block">
-          <a href="https://www.zeroup.co/ch-join">
+        <div class="bg-blue-500 hover:bg-blue-700 flex inline-flex items-center text-white font-bold border-2 border-blue-700 lg:text-lg lg:py-4 lg:px-8 mb-0 py-2 px-4 text-center rounded shadow hover:shadow-lg transition duration-150 ease-in-out">
+          <i class="fas fa-angle-double-right fa-2x"></i>
+          <a class="mx-4" href="https://www.zeroup.co/ch-join">
             Click Here to Enroll Into Commission Hero & Get An Additional $13,370 Worth Of Bonuses For FREE!
           </a>
-        </p>
+          <i class="fas fa-angle-double-left fa-2x"></i>
+        </div>
       </div>
     </div>
   </div>
@@ -129,11 +137,13 @@
       <p>
         <b>It is 100% beginners friendly</b> and is created by Robby Blanchard, an ex-gym trainer who had absolutely <b>NO</b> experience in affiliate marketing, <u>just like you.</u>
       </p>
-      <p class="bg-blue-500 hover:bg-blue-700 text-white font-bold lg:text-lg lg:py-4 lg:px-8 mb-0 py-2 px-4 mb-0 text-center rounded inline-block">
-        <a href="https://www.zeroup.co/ch-join">
+      <div class="bg-blue-500 hover:bg-blue-700 flex inline-flex items-center text-white font-bold border-2 border-blue-700 lg:text-lg lg:py-4 lg:px-8 mb-0 py-2 px-4 text-center rounded shadow hover:shadow-lg transition duration-150 ease-in-out">
+        <i class="fas fa-angle-double-right fa-2x"></i>
+        <a class="mx-4" href="https://www.zeroup.co/ch-join">
           Enroll In Commission Hero Now By Clicking Here & Get An Additional $13,380 Worth Of Amazing Bonuses For FREE!
         </a>
-      </p>
+        <i class="fas fa-angle-double-left fa-2x"></i>
+      </div>
     </div>
   </div>
   <!-- How does it work -->
@@ -193,11 +203,13 @@
       <p>
         But this is only just the basic level of everything you will learn from Commission Hero. You will deep dive into the simple 3-steps I briefly explained above and get EVERYTHING you could possibly need to potentially succeed at this.
       </p>
-      <p class="bg-blue-500 hover:bg-blue-700 text-white font-bold lg:text-lg lg:py-4 lg:px-8 mb-0 py-2 px-4 mb-0 text-center rounded inline-block">
-        <a href="https://www.zeroup.co/ch-join">
+      <div class="bg-blue-500 hover:bg-blue-700 flex inline-flex items-center text-white font-bold border-2 border-blue-700 lg:text-lg lg:py-4 lg:px-8 mb-0 py-2 px-4 text-center rounded shadow hover:shadow-lg transition duration-150 ease-in-out">
+        <i class="fas fa-angle-double-right fa-2x"></i>
+        <a class="mx-4" href="https://www.zeroup.co/ch-join">
           So, if you're ready to become an Affiliate Marketer, enroll in Commission Hero now by clicking here and get an additional $13,970 worth of bonuses for free
         </a>
-      </p>
+        <i class="fas fa-angle-double-left fa-2x"></i>
+      </div>
     </div>
   </div>
   <!-- Who is Robby -->
@@ -240,11 +252,11 @@
         Now Robby has created Commission Hero to help people just like yourself, who also don’t have any experience in affiliate marketing, to now having their own successful and profitable online business.
       </p>
       <div class="flex justify-center items-center text-center py-4 lg:px-4 mb-4">
-        <i class="fas fa-chevron-down fa-3x text-blue-400 hidden lg:block"></i>
-        <div class="p-4 mx-4 bg-blue-600 items-center text-white leading-none flex lg:inline-flex" role="alert">
+        <div class="p-4 mx-4 bg-blue-100 items-center text-blue-800 leading-none flex lg:inline-flex" role="alert">
+          <i class="fas fa-chevron-down fa-3x text-blue-400 hidden lg:block"></i>
           <span class="font-semibold ml-1 text-center flex-auto leading-normal">So let’s get into the exciting stuff! Here’s exactly what you’ll get by enrolling in Commission Hero today:</span>
+          <i class="fas fa-chevron-down fa-3x text-blue-400 hidden lg:block"></i>
         </div>
-        <i class="fas fa-chevron-down fa-3x text-blue-400 hidden lg:block"></i>
       </div>
       <h3 class="text-lg lg:text-2xl font-bold mb-2 text-center text-red-600">
         The Ultimate Training Package That The #1 ClickBank Affiliate In The World Is Using To Make Thousands Per Day!
@@ -275,7 +287,7 @@
       <h3 class="text-2xl font-bold mb-0 text-center text-yellow-600">
         Exclusive Commission Hero <u>BONUSES!</u>
       </h3>
-      <img class="w-3/4 mx-auto" src="./assets/images/bonuses.png" alt="">
+      <img class="w-3/4 mx-auto" src="./assets/images/bonuses.png" alt="Bonuses">
       <div class="container bg-yellow-100 p-3 border-2 border-yellow-200 rounded mb-4">
         <p>
           <b class="text-lg text-gray-800">Bonus #1) Exclusive Campaign Setup Video</b><br> A complete hand-holding walkthrough on how to set-up your own Facebook campaigns. <br>
@@ -335,16 +347,16 @@
       <div class="container mb-8 relative">
         <div class="relative inset-0 flex flex-col lg:flex-row lg:flex-wrap z-10">
           <div class="lg:w-1/2 p-2">
-            <img class="shadow-xl rounded-lg border-4 border-gray-200" src="./assets/images/result2.png" alt="">
+            <img class="shadow-xl rounded-lg border-4 border-gray-200" src="./assets/images/result2.png" alt="Result 2">
           </div>
           <div class="lg:w-1/2 p-2">
-            <img class="shadow-xl rounded-lg border-4 border-gray-200" src="./assets/images/result1.jpg" alt="">
+            <img class="shadow-xl rounded-lg border-4 border-gray-200" src="./assets/images/result1.jpg" alt="Result 1">
           </div>
           <div class="lg:w-1/2 p-2">
-            <img class="shadow-xl rounded-lg border-4 border-gray-200" src="./assets/images/result3.png" alt="">
+            <img class="shadow-xl rounded-lg border-4 border-gray-200" src="./assets/images/result3.png" alt="Result 3">
           </div>
           <div class="lg:w-1/2 p-2">
-            <img class="shadow-xl rounded-lg border-4 border-gray-200" src="./assets/images/result4.png" alt="">
+            <img class="shadow-xl rounded-lg border-4 border-gray-200" src="./assets/images/result4.png" alt="Result 4">
           </div>
         </div>
         <p class="text-sm text-gray-800 text-center my-4">Disclaimer: Results may not be typical nor expected for every person. All information provided on this website is based on best practices and for educational-purposes only.</p>
@@ -404,11 +416,15 @@
         <p>
           <b>I HIGHLY recommend purchasing Commission Hero right now before this <u>huge discounted price is no longer available.</u></b>
         </p>
-        <p class="bg-blue-500 hover:bg-blue-700 text-white font-bold lg:text-lg lg:py-4 lg:px-8 mb-0 py-2 px-4 mb-0 text-center rounded">
-          <a href="https://www.zeroup.co/ch-join">
-            Click here to get Commission Hero RIGHT NOW!
-          </a>
-        </p>
+        <div class="container mx-auto flex justify-center">
+          <div class="bg-blue-500 hover:bg-blue-700 flex inline-flex items-center text-white font-bold border-2 border-blue-700 lg:text-lg lg:py-4 lg:px-8 mb-0 py-2 px-4 text-center rounded shadow hover:shadow-lg transition duration-150 ease-in-out">
+            <i class="fas fa-angle-double-right fa-2x"></i>
+            <a class="mx-4" href="https://www.zeroup.co/ch-join">
+              Click here to get Commission Hero RIGHT NOW!
+            </a>
+            <i class="fas fa-angle-double-left fa-2x"></i>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -429,24 +445,33 @@
       <p>
         If you enroll in Commission Hero through our link, you also get all the extra bonuses below that you can’t get ANYWHERE else.
       </p>
-      <p class="bg-blue-500 hover:bg-blue-700 text-white font-bold lg:text-lg lg:py-4 lg:px-8 mb-4 py-2 px-4 text-center rounded block">
-        <a href="https://www.zeroup.co/ch-join">
-          Go here NOW to enroll in Commission hero and get your extra bonuses
-        </a>
-      </p>
+      <div class="container mx-auto flex justify-center lg:px-10 mb-4">
+        <div class="bg-blue-500 hover:bg-blue-700 flex inline-flex items-center text-white font-bold border-2 border-blue-700 lg:text-lg lg:py-4 lg:px-8 mb-0 py-2 px-4 text-center rounded shadow hover:shadow-lg transition duration-150 ease-in-out">
+          <i class="fas fa-angle-double-right fa-2x"></i>
+          <a class="mx-4" href="https://www.zeroup.co/ch-join">
+            Go here NOW to enroll in Commission hero and get your extra bonuses
+          </a>
+          <i class="fas fa-angle-double-left fa-2x"></i>
+        </div>
+      </div>
       <p class="text-xl lg:text-2xl font-bold mb-4 text-center text-teal-600">
         Here’s what you get when you join Commission Hero today:
       </p>
       <div class="container mx-auto p-4 bg-gray-100 border-2 border-teal-500 rounded mb-4">
-        <p class=" mb-8">
-          <b class="text-gray-800 text-lg">FREE Bonus #1: 4-Week Affiliate Bootcamp</b> <br> You already have coaching from Robby but with an extended live coaching session with me, Fred Lam, you can 10X Your Results <br> <span class="text-teal-500 font-bold">(Valued: $2,497)</span>
-        </p>
+        <div class="flex flex-col-reverse lg:flex-row">
+          <p class="lg:w-4/6 mb-8">
+            <b class="text-gray-800 text-lg">FREE Bonus #1: 4-Week Affiliate Bootcamp</b> <br> You already have coaching from Robby but with an extended live coaching session with me, Fred Lam, you can 10X Your Results <br> <span class="text-teal-500 font-bold">(Valued: $2,497)</span>
+          </p>
+          <div class="w-1/2 lg:w-2/6">
+            <img class="" src="./assets/images/bootcamp.svg" alt="Bootcamp">
+          </div>
+        </div>
         <div class="flex flex-col-reverse lg:flex-row">
           <p class="lg:w-4/6 mb-8">
             <b class="text-gray-800 text-lg">FREE Bonus #2: Google Display Domination</b> <br> This training course will show you how to DOUBLE your affiliate sales by getting dirt-cheap t from Google Display Network. <br> <span class="text-teal-500 font-bold">(Valued: $997)</span>
           </p>
           <div class="w-1/2 lg:w-2/6 lg:pl-4">
-            <img class="" src="./assets/images/Google_PB_Display_logo_primary.png" alt="">
+            <img class="" src="./assets/images/Google_PB_Display_logo_primary.png" alt="Google Display">
           </div>
         </div>
         <div class="flex flex-col-reverse lg:flex-row">
@@ -454,7 +479,7 @@
             <b class="text-gray-800 text-lg">Free Bonus #3: FB Playbook Series</b> <br> Industry-leading, Facebook Ad training with results. You learn directly from me for FREE, a Facebook Ads master, how you can get even better results with your Facebook Ads. <br> <span class="text-teal-500 font-bold">(Valued: $594)</span>
           </p>
           <div class="w-1/2 lg:w-2/6 lg:pl-4">
-            <img class="" src="./assets/images/FB_Playbook_Dark Logo.png" alt="">
+            <img class="" src="./assets/images/FB_Playbook_Dark Logo.png" alt="FB Playbook">
           </div>
         </div>
         <div class="flex flex-col-reverse lg:flex-row">
@@ -462,23 +487,32 @@
             <b class="text-gray-800 text-lg">Free Bonus #4: FB Playbook Advanced</b> <br> Learn how to scale your Facebook Ads with hands-on training and proven retargeting strategies and never-before seen scaling techniques. <br> <span class="text-teal-500 font-bold">(Valued: $297)</span>
           </p>
           <div class="w-1/2 lg:w-2/6 lg:pl-4">
-            <img class="" src="./assets/images/FB_Playbook_Advance_Logo_Dark.png" alt="">
+            <img class="" src="./assets/images/FB_Playbook_Advance_Logo_Dark.png" alt="FB Playbook Advanced">
           </div>
         </div>
-        <p class=" mb-8">
-          <b class="text-gray-800 text-lg">Free Bonus #5: My Personal CH Journal</b> <br> Get exclusive access to see my entire journal on what I did to achieve results with Commission Hero in RECORD time to help you get the same results. <br> <span class="text-teal-500 font-bold">(Valude: $3,997)</span>
-        </p>
-        <p class=" mb-8">
-          <b class="text-gray-800 text-lg">Free Bonus #6: VIP Access To Our FIRST-EVER Affiliate Summit</b> <br> FULL day virtual event where myself and several top 7 to 8-figure Affiliate Marketers shared their secrets so you can master EVERYTHING about Affiliate Marketing. <br> <span class="text-teal-500 font-bold">(Valued: $3,997)</span>
-        </p>
+        <div class="flex flex-col-reverse lg:flex-row">
+          <p class="lg:w-4/6 mb-8">
+            <b class="text-gray-800 text-lg">Free Bonus #5: My Personal CH Journal</b> <br> Get exclusive access to see my entire journal on what I did to achieve results with Commission Hero in RECORD time to help you get the same results. <br> <span class="text-teal-500 font-bold">(Valude: $3,997)</span>
+          </p>
+          <div class="w-1/2 lg:w-2/6">
+            <img class="" src="./assets/images/journal.svg" alt="Freds Journal">
+          </div>
+        </div>
+        <div class="flex flex-col-reverse lg:flex-row">
+          <p class="lg:w-4/6 mb-8">
+            <b class="text-gray-800 text-lg">Free Bonus #6: VIP Access To Our FIRST-EVER Affiliate Summit</b> <br> FULL day virtual event where myself and several top 7 to 8-figure Affiliate Marketers shared their secrets so you can master EVERYTHING about Affiliate Marketing. <br> <span class="text-teal-500 font-bold">(Valued: $3,997)</span>
+          </p>
+          <div class="w-1/2 lg:w-2/6">
+            <img class="" src="./assets/images/summit.svg" alt="Summit Event">
+          </div>
+        </div>
       </div>
-      <div class="text-center">
-        <p class="bg-blue-500 hover:bg-blue-700 text-white font-bold lg:text-lg lg:py-4 lg:px-8 mb-0 py-2 px-4 text-center rounded block">
-          <a href="https://www.zeroup.co/ch-join">
-            I’m READY to join Commission Hero & Claim ALL Your Bonuses <br>
-            <span class="text-xl">Go Here To Join Now</span>
-          </a>
-        </p>
+      <div class="bg-blue-500 hover:bg-blue-700 flex inline-flex items-center text-white font-bold border-2 border-blue-700 lg:text-lg lg:py-4 lg:px-8 mb-0 py-2 px-4 text-center rounded shadow hover:shadow-lg transition duration-150 ease-in-out">
+        <i class="fas fa-angle-double-right fa-2x"></i>
+        <a class="mx-4" href="https://www.zeroup.co/ch-join">
+          I’m READY to join Commission Hero & Claim ALL Your Bonuses <br>
+        </a>
+        <i class="fas fa-angle-double-left fa-2x"></i>
       </div>
     </div>
   </div>
@@ -502,11 +536,15 @@
           <span class="text-lg underline text-red-600"><b>Step #3:</b></span> Give Us 5 Business Days To Process Your Bonuses!
         </p>
       </div>
-      <p class="bg-red-500 hover:bg-red-700 text-white font-bold lg:text-lg lg:py-4 lg:px-8 mb-2 py-2 px-4 text-center rounded block mx-4">
-        <a href="https://www.zeroup.co/ch-join">
-          Click Here To Enroll Into Commission Hero Now & Claim These Additional $13,379 Worth Of Bonuses Now!
-        </a>
-      </p>
+      <div class="container px-4 flex justify-center lg:px-10 mb-4">
+        <div class="bg-red-500 hover:bg-red-700 flex inline-flex items-center text-white font-bold border-2 border-red-700 lg:text-lg lg:py-4 lg:px-8 mb-0 py-2 px-4 text-center rounded shadow hover:shadow-lg transition duration-150 ease-in-out">
+          <i class="fas fa-angle-double-right fa-2x"></i>
+          <a class="mx-4" href="https://www.zeroup.co/ch-join">
+            Click Here To Enroll Into Commission Hero Now & Claim These Additional $13,379 Worth Of Bonuses Now!
+          </a>
+          <i class="fas fa-angle-double-left fa-2x"></i>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -552,11 +590,13 @@
       <p>
         To help ensure you are 100% joining through my link, <b><u>I recommend clearing your browser cookies before clicking any link.</u></b>
       </p>
-      <p class="bg-blue-500 hover:bg-blue-700 text-white font-bold lg:text-lg lg:py-4 lg:px-8 mb-0 py-2 px-4 text-center rounded block mx-4">
-        <a href="https://www.zeroup.co/ch-join">
+      <div class="bg-blue-500 hover:bg-blue-700 flex inline-flex items-center text-white font-bold border-2 border-blue-700 lg:text-lg lg:py-4 lg:px-8 mb-0 py-2 px-4 text-center rounded shadow hover:shadow-lg transition duration-150 ease-in-out">
+        <i class="fas fa-angle-double-right fa-2x"></i>
+        <a class="mx-4" href="https://www.zeroup.co/ch-join">
           Click Here To Enroll Into Commission Hero Now & Claim These Additional $13,379 Worth Of Bonuses Now!
         </a>
-      </p>
+        <i class="fas fa-angle-double-left fa-2x"></i>
+      </div>
     </div>
   </div>
 
@@ -584,8 +624,9 @@
   </footer>
 
   <!-- Optional JavaScript -->
-  <iframe class="w-px h-px" src=“https://fredl.co/trakcb” height=“1px” width=“1px”/>
+  <iframe class="w-px h-px" src=“https://fredl.co/trakcb” height=“1px” width=“1px”></iframe>
   <!-- | SCRIPTS | Main JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
